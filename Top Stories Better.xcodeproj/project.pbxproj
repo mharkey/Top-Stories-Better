@@ -12,6 +12,7 @@
 		8521FB83221DC46000C10D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8521FB81221DC46000C10D44 /* Main.storyboard */; };
 		8521FB85221DC46600C10D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8521FB84221DC46600C10D44 /* Assets.xcassets */; };
 		8521FB88221DC46600C10D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8521FB86221DC46600C10D44 /* LaunchScreen.storyboard */; };
+		8521FB92221DC6DF00C10D44 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8521FB91221DC6DF00C10D44 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8521FB84221DC46600C10D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8521FB87221DC46600C10D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8521FB89221DC46600C10D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8521FB91221DC6DF00C10D44 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8521FB84221DC46600C10D44 /* Assets.xcassets */,
 				8521FB86221DC46600C10D44 /* LaunchScreen.storyboard */,
 				8521FB89221DC46600C10D44 /* Info.plist */,
+				8521FB91221DC6DF00C10D44 /* SwiftyJSON.swift */,
 			);
 			path = "Top Stories Better";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8521FB92221DC6DF00C10D44 /* SwiftyJSON.swift in Sources */,
 				8521FB80221DC46000C10D44 /* SourcesViewController.swift in Sources */,
 				8521FB7E221DC46000C10D44 /* AppDelegate.swift in Sources */,
 			);

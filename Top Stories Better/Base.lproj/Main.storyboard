@@ -41,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mVc-mF-tHu" kind="show" id="W3R-ax-kEe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,7 +51,13 @@
                             <outlet property="delegate" destination="hMx-3k-THy" id="ELs-Bd-p98"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="l2j-q2-kfb"/>
+                    <navigationItem key="navigationItem" id="l2j-q2-kfb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="kXO-sI-9r3">
+                            <connections>
+                                <action selector="onTappedDoneButton:" destination="hMx-3k-THy" id="ywe-ZH-GJ5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbs-u5-Aw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,6 +80,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oun-EQ-Dtu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="191.19999999999999" y="148.87556221889056"/>
+        </scene>
+        <!--Articles View Controller-->
+        <scene sceneID="Jnw-ho-S7p">
+            <objects>
+                <tableViewController id="mVc-mF-tHu" customClass="ArticlesViewController" customModule="Top_Stories_Better" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EtU-VI-Gn4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="bIq-wN-RdD" detailTextLabel="9g9-lt-ryh" style="IBUITableViewCellStyleSubtitle" id="UpZ-HH-TNV">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UpZ-HH-TNV" id="cho-hF-AxI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bIq-wN-RdD">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9g9-lt-ryh">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mVc-mF-tHu" id="gfr-Na-s7e"/>
+                            <outlet property="delegate" destination="mVc-mF-tHu" id="uMc-eY-LdX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="6Wm-uV-ymv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1L5-tA-p3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089" y="149"/>
         </scene>
     </scenes>
 </document>
